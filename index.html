@@ -21,7 +21,7 @@
       let form = document.querySelector("#searchForm");
       form.addEventListener("submit", setSearchEngine);
       let check = document.querySelector("input[name=engine]:checked");
-      let s = document.querySelector("input[name=q]");
+      let s = document.querySelector("#search");
 
       if (check !== "on" || s.value === "") {
         alert("choose");
@@ -34,7 +34,7 @@
 <body>
   <form id="searchForm">
     <!-- TODO: add form elements -->
-    <input id="search" type="text" name="q" />
+    <input id="search" type="search" name="q" placeholder="Search" required />
     <label><input type="radio" name="engine" value="google" />Google</label>
     <label><input type="radio" name="engine" value="duck" />DuckDuckGo</label>
     <label><input type="radio" name="engine" value="bing" />Bing</label>
