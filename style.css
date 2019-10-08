@@ -1,0 +1,20 @@
+body {
+  background-color: #adadad;
+}
+form {
+  background-color: #dadada;
+  text-align: center;
+  margin: 20px 20px;
+  padding: 10px 10px;
+}
+button {
+  background-color: yellowgreen;
+  width: 50px;
+  height: 20px;
+}
+input {
+  background-color: yellow;
+}
+label {
+  background-color: greenyellow;
+}
