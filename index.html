@@ -8,7 +8,7 @@
     function setSearchEngine(evt) {
       let check = document.querySelector("input[name=engine]:checked");
       let s = document.querySelector("#search");
-      if (check !== "on" || s.value === "") {
+      if (!check || s.value === "") {
         alert("choose");
         evt.preventDefault();
       }
@@ -22,6 +22,7 @@
       };
       let choice = actions[engine];
       action.setAttribute("action", choice);
+      // action.action = choice;
     }
     window.addEventListener("load", function(evt) {
       // TODO: register the handler
